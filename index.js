@@ -140,7 +140,6 @@ class InstagramBot {
 			logger.error(`Fatal error for ${this.account.username}: ${error.message}`)
 		} finally {
 			logger.info(`Closing browser for ${this.account.username}`)
-			await this.browser.close()
 		}
 	}
 }
